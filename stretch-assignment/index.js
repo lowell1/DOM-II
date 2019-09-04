@@ -3,7 +3,7 @@ var topBlock = blocks[0];
 var body = document.querySelector("body");
 var curDist = 10;
 var intervalID = null;
-const moveRate = 100;
+const moveRate = 30;
 const moveDist = 5;
 var moveDirection = 1;
 
@@ -14,8 +14,8 @@ function MoveTopBlock() {
     if(curDist <= 10)  {
         topBlock.style.marginLeft = "10px";
         curDist = 10;
-        intervalID = null;
         clearInterval(intervalID);
+        intervalID = null;
     }
 }
 
